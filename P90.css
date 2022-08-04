@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding:1px;
+    font-family: 'Albert Sans';
+  
+}
+
+.BO{
+    background: transparent;
+    padding: 20px;
+    display: grid;
+    min-width: 10vh;
+    place-content: center;
+    
+}
+.box h2{ 
+  
+    background-color: transparent;
+ 
+}
+
+.box{
+    animation: flutua 5s infinite ease-in-out;
+}
+
+@keyframes flutua {
+    0%, 100%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    
+}
+.box h2:nth-child(1){
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(49, 66, 219);
+}
+
+.box h2:nth-child(2){
+    color: #0000ff;
+    animation: GJ 1s ease-in-out infinite;
+}
+
+@keyframes GJ {
+    0%, 100%{
+        clip-path: polygon(0% 78%, 3% 71%, 7% 65%, 11% 60%, 14% 57%, 18% 56%, 22% 56%, 28% 61%, 34% 66%, 38% 69%, 44% 71%, 49% 69%, 54% 65%, 60% 57%, 64% 49%, 68% 45%, 74% 44%, 81% 48%, 85% 54%, 90% 63%, 94% 70%, 98% 74%, 100% 73%, 100% 100%, 0% 100%);
+    }
+    50%{
+        
+        clip-path: polygon(100% 71%, 94% 58%, 88% 50%, 82% 49%, 73% 54%, 65% 60%, 58% 66%, 51% 65%, 45% 54%, 39% 45%, 34% 39%, 27% 35%, 19% 41%, 13% 49%, 9% 58%, 4% 64%, 0% 67%, 0% 99%, 100% 100%);
+    }
+}
+
+.nav{
+    box-shadow: 0px 0px 10px #001aaf;
+}
+.nav.dark{
+    box-shadow: 0px 0px 10px #08FC11;
+}
+.p.dark{
+    box-shadow: 0px 2px 20px #08FC11;
+}
+body.dark{
+    background-image: linear-gradient(black, black,#08FC11, black);
+}
+
+.main.dark{
+    box-shadow: 0px 0px 15px #08FC11 ;
+    animation: FT 1s infinite;
+}
+@keyframes FT {
+    0% {
+        box-shadow: 0px 0px 20px  #08FC11;
+    }
+    25%{
+        box-shadow: 0px 0px 25px #08FC11; 
+    }
+    50%{
+        box-shadow: 0px 0px 30px #08FC11;
+       }
+    75%{
+        box-shadow: 0px 0px 25px #08FC11; 
+    }
+    100%{
+        box-shadow: 0px 0px 20px  #08FC11; 
+    }
+}
+  
+   @keyframes animar {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+       50%{
+           opacity: 0.3;
+       }
+       100%{
+        transform: scale(1.07);
+        opacity: 10;
+    }
+       
+   }
+   body{
+
+    background-size: cover;
+    background: black;
+    perspective: 800px;
+}
+.TH{
+    position: relative;
+   
+    width: 1200px;
+    box-shadow: 0px 0px 20px #001aaf;
+    height: 10px;
+    animation: GY 10s infinite;
+    top: 450px;
+    border-radius: 30px;
+    transform: translateY(10px) rotateX(80deg);
+    left: 43px;
+}
+
+@keyframes GY {
+    0% {
+        box-shadow: 0px 0px 30px  #001aaf;
+        background: #001aaf27;
+    }
+    25%{
+        box-shadow: 0px 0px 35px #001aaf; 
+        background: #001aaf38;
+    }
+    50%{
+        box-shadow: 0px 0px 40px #001aaf;
+        background: #001aaf49;
+       }
+    75%{
+        box-shadow: 0px 0px 35px #001aaf; 
+        background: #001aaf38;
+    }
+    100%{
+        box-shadow: 0px 0px 30px  #001aaf; 
+        background: #001aaf27;
+    }
+}
+
+label img{
+    width: 55px;
+    background: transparent;
+    left: 100px;
+}
+.p{
+    text-decoration: none;
+}
+h1{
+    color: rgb(10, 181, 233);
+    padding: 15px;
+    font-family: 'Press Start 2P';
+    font-size: 10px;
+}
+p img{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+ul{
+    position:relative;
+    top:0px;
+    width: 100%;
+}
+.GD{
+    
+    box-shadow: 0px 2px 30px blue;
+   
+}
+nav{
+    
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 100px;
+    left: -300px;
+    height: 560px;
+    position:absolute;
+    
+    border-radius: 10px;
+}
+li{
+    border-color: #001aaf;
+}
+
+p{
+    background-color: black;
+    display: block;
+    padding: 20px 10px;
+    color: rgb(248, 4, 4);
+    box-shadow: 0px 2px 20px #000000;
+    border-radius: 5px 30px 5px;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(300px);
+    
+}
+li:hover,
+H1:hover
+button:hover
+.p >img:hover{
+    cursor: pointer;
+    
+}
+p{
+    
+    transition: transform .9s ;
+}
+p:hover{
+    transform: scale(1.1);
+    background: black;
+}
+label>img{
+    width: 40px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    transition: transform .9s ;
+    box-shadow: 0px 2px 20px #000000;
+}
+label>img:hover{
+    transform: scale(1.1);
+    
+}
+.main{
+    position:absolute;
+    background-image: url('HJ.gif');
+    background-size: 1300px 420px;
+    background-position-x: 40px;
+    left: 20px;
+    width: 90px;
+    padding: 200px 560px;
+    margin: 20px;
+    position: block;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    animation: FG 1s infinite;
+    top: 100px;
+    box-shadow: 0px 0px 15px #ebc906 ;
+    border-radius: 30px
+}
+
+ 
+.babi{
+    position: relative;
+    margin: 0 ;
+    width: 60px;
+    height: 10vh;
+    right: 20px;
+}
+
+.cav{position: absolute;
+    
+}
+.tempo{
+    position: relative;
+    top: -150px;
+    right: 90px;
+    height: 100px;
+    width: 9px;
+}
+iframe{
+    box-shadow: 0px 0px 30px black;
+}
+
+a{
+    position: relative;
+    padding: 15px 20px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.432);
+    border-radius: 20px;
+}
+
+a>img{
+    width: 45px;
+    background: rgba(233, 14, 14, 0);
+    border-radius: 10px;    
+}
+
+h4{
+    position: relative;
+    color: rgb(10, 181, 233);
+    font-size: 8px;
+    left: 12px;
+    font-family: 'Press Start 2P';
+}
+
+@keyframes FG {
+    0% {
+        box-shadow: 0px 0px 20px  #001aaf;
+    }
+    25%{
+        box-shadow: 0px 0px 25px #001aaf; 
+    }
+    50%{
+        box-shadow: 0px 0px 30px #001aaf;
+       }
+    75%{
+        box-shadow: 0px 0px 25px #001aaf; 
+    }
+    100%{
+        box-shadow: 0px 0px 20px  #001aaf; 
+    }
+}
+
+a>img:hover{
+    transform: scale(1.2);
+}
+iframe{
+    border-radius: 30px 0px 30px 0px;
+    opacity: 0.0;
+    
+}
+iframe:hover{
+    box-shadow: 0px 0px 30px #EB0609;
+}
+.Belgo img{
+    display: none;
+}
+h2{
+    font-family: 'Press Start 2P';
+}
+
+@media only screen and (max-width:700px){
+    body{
+        position:absolute;
+        background-repeat: no-repeat;
+        background-size: 105.9vw;
+        background-image: url('giphy\ \(3\).gif');
+        display: flex;
+        
+    }
+    .Belgo img{
+        display:flex;
+        position: relative;
+        top: 15px;
+        left: 0px;
+        height: 33px;
+        width:39px;
+        background: #0000ff;
+        box-shadow: 0px 0px 10px green;
+    }
+    .main{
+        display: none;
+    }
+    nav{
+        top:80px;
+    }
+    .nav{
+        box-shadow: 2px 0px 6px #cb08fc;
+        animation: 0.5s PR infinite ease-in-out;
+        width: 25vw;
+    }
+  
+    .babi a{
+        display: none;
+    }
+    label img{
+        top:15px;
+        width: 10%;
+    }
+    h4{
+        font-size: 60%;
+    }
+    p{
+        color: #08FC11;
+    }
+    a img{
+        position: relative;
+        right: 10px;
+    }
+    a{
+        box-shadow: -10px 0px 8px #08c3fc75;
+        animation: 3s PL infinite ease-in-out;
+        width: 30%;
+        padding: 10px 25px;
+    }
+    h1{
+        position: relative;
+        font-size: 50%;
+        right: 5px;
+    }
+
+    @keyframes PL {
+        0% {
+            box-shadow: -5px 0px 5px #08c3fc75;
+        }
+
+        12%{
+            box-shadow: -5px 0px 5px #08c3fc75 ; 
+        }
+
+        25%{
+            box-shadow: 0px 0px 5px #08c3fc75; 
+        }
+
+        37%{
+            box-shadow: 5px 0px 5px #08c3fc75; 
+        }
+
+        50%{
+            box-shadow: 5px 0px 5px #08c3fc75; 
+        }
+
+        62%{
+            box-shadow: 5px 0px 5px #08c3fc75; 
+        }
+
+        75%{
+            box-shadow:  0px 0px 5px #08c3fc75;
+        }
+
+        87%{
+            box-shadow:  -5px 0px 5px #08c3fc75;
+        }
+
+        100% {
+            box-shadow:  -5px 0px 5px #08c3fc75;
+        }
+
+    }
+
+    .icon{
+        display: none;
+    }
+    .main.dark{
+        display: none;
+    }
+    body.dark{
+        background: #000000;
+    }
+    .th{
+        display: none;
+    }
+    .BO{
+        display: none;
+    }
+    .TH{
+        display: none;
+    }
+}
